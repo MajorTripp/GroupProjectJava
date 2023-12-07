@@ -1,0 +1,15 @@
+com\mycompany\finalproject\UsersController$1.class
+com\mycompany\finalproject\UsersFacade.class
+com\mycompany\finalproject\JakartaRestConfiguration.class
+com\mycompany\finalproject\UsersGroupsController$1.class
+com\mycompany\finalproject\UsersGroupsController.class
+com\mycompany\finalproject\Users.class
+com\mycompany\finalproject\AbstractFacade.class
+com\mycompany\finalproject\UsersGroupsFacade.class
+com\mycompany\finalproject\util\JsfUtil.class
+com\mycompany\finalproject\resources\JakartaEE8Resource.class
+com\mycompany\finalproject\UsersController.class
+com\mycompany\finalproject\UsersController$UsersControllerConverter.class
+com\mycompany\finalproject\UsersGroups.class
+com\mycompany\finalproject\UsersGroupsController$UsersGroupsControllerConverter.class
+com\mycompany\finalproject\util\PaginationHelper.class
