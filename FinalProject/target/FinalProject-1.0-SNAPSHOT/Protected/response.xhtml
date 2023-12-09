@@ -18,7 +18,8 @@
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html">
     <h:head>
-        <title>Our Fishy Landing Page</title>
+        <title>Our Fishy Webpage</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
     </h:head>
     <h:body>
         <h:form>
@@ -27,10 +28,11 @@
                             height="300"
                             alt="Image of a fishtank"/>
             <h2>This is a fish tank!</h2>
-            <p></p>
-            <h:commandButton id="logout" value="Logout" action="login" /> 
+            <p>In this tank, there are many fish, mostly Tetras. There are 4 Cardinal Tetras, 4 Black Neon Tetras, 3 Green Neon Tetras,
+            3 Serpae Tetras, 1 Penguin Tetra, and a Cory Catfish.</p>
+            <h:button id="logout" value="Logout" outcome="login" /> 
             <!-- TODO FIX ACTIONS -->
-            <h:commandButton id="changepassword" value="Change Password" action ="template"/>
+            <h:commandButton id="changepassword" value="Change Password" action ="Edit"/>
         </h:form>
     </h:body>
 </html>

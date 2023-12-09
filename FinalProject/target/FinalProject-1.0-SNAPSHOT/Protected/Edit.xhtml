@@ -7,7 +7,7 @@
 
     <ui:composition template="/template.xhtml">
         <ui:define name="title">
-            <h:outputText value="#{bundle.EditUsersTitle}"></h:outputText>
+            <h:outputText value="Change Password"></h:outputText>
         </ui:define>
         <ui:define name="body">
             <h:panelGroup id="messagePanel" layout="block">
@@ -17,18 +17,13 @@
                 <h:panelGrid columns="2">
                     <h:outputLabel value="#{bundle.EditUsersLabel_userid}" for="userid" />
                     <h:inputText id="userid" value="#{usersController.selected.userid}" title="#{bundle.EditUsersTitle_userid}" required="true" requiredMessage="#{bundle.EditUsersRequiredMessage_userid}"/>
-                    <h:outputLabel value="#{bundle.EditUsersLabel_password}" for="password" />
+                    <h:outputLabel value="New Password:" for="password" />
                     <h:inputText id="password" value="#{usersController.selected.password}" title="#{bundle.EditUsersTitle_password}" required="true" requiredMessage="#{bundle.EditUsersRequiredMessage_password}"/>
                 </h:panelGrid>
-                <h:commandLink action="#{usersController.update}" value="#{bundle.EditUsersSaveLink}"/>
+                <h:commandButton action="#{usersController.update}" value="#{bundle.EditUsersSaveLink}"/>
                 <br />
                 <br />
-                <h:link outcome="View" value="#{bundle.EditUsersViewLink}"/>
-                <br />
-                <h:commandLink action="#{usersController.prepareList}" value="#{bundle.EditUsersShowAllLink}" immediate="true"/>
-                <br />
-                <br />
-                <h:link outcome="/login" value="#{bundle.EditUsersIndexLink}" />
+                <h:button outcome="response" value="Back to the fish" />
             </h:form>
         </ui:define>
     </ui:composition>
