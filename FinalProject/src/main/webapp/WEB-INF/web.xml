@@ -39,7 +39,7 @@
         <realm-name>myjdbcRealm</realm-name>
         <form-login-config>
             <form-login-page>/login.xhtml</form-login-page>
-            <form-error-page>/error.html</form-error-page>
+            <form-error-page>/error.xhtml</form-error-page>
         </form-login-config>
     </login-config>
     <security-role>

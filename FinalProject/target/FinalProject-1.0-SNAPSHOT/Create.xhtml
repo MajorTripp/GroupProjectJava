@@ -21,13 +21,10 @@
                     <h:inputText id="password" value="#{usersController.selected.password}" title="#{bundle.CreateUsersTitle_password}" required="true" requiredMessage="#{bundle.CreateUsersRequiredMessage_password}"/>
                 </h:panelGrid>
                 <br />
-                <h:commandLink action="#{usersController.create}" value="#{bundle.CreateUsersSaveLink}" />
+                <h:commandButton action="#{usersController.create}" value="#{bundle.CreateUsersSaveLink}" />
                 <br />
                 <br />
-                <h:commandLink action="#{usersController.prepareList}" value="#{bundle.CreateUsersShowAllLink}" immediate="true"/>
-                <br />
-                <br />
-                <h:link outcome="/index" value="#{bundle.CreateUsersIndexLink}"/>
+                <h:button outcome="/login" value="back to login"/>
             </h:form>
         </ui:define>
     </ui:composition>
