@@ -42,6 +42,8 @@ public class UsersController implements Serializable {
         return ejbFacade;
     }
 
+    
+    
     public PaginationHelper getPagination() {
         if (pagination == null) {
             pagination = new PaginationHelper(10) {

@@ -17,9 +17,23 @@ function checkPassword(){
     }
     
 }
+function storeUsername() {
+    var usernameInput = document.getElementsByName('j_username')[0].value;
+    localStorage.setItem('username', usernameInput);
+}
 
+function verifyUsername() {
+    var form = document.getElementById('myForm');
+        var useridValue = form.elements['myForm:userid'].value;
+    var storedUsername = localStorage.getItem('username'); 
+    if (useridValue === storedUsername) {
 
-
+        return true;
+    } else {
+        alert('Username verification failed!');
+        return false;
+    }
+}
 
 /*
 module.exports = function (grunt) {

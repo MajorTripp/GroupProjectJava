@@ -19,6 +19,7 @@
       xmlns:h="jakarta.faces.html">
     <h:head>
         <title>Our Fishy Webpage</title>
+        <h:outputScript library="js" name="pass.js" />
         <h:outputStylesheet name="css/jsfcrud.css"/>
     </h:head>
     <h:body>
@@ -30,9 +31,12 @@
             <h2>This is a fish tank!</h2>
             <p>In this tank, there are many fish, mostly Tetras. There are 4 Cardinal Tetras, 4 Black Neon Tetras, 3 Green Neon Tetras,
             3 Serpae Tetras, 1 Penguin Tetra, and a Cory Catfish.</p>
-            <h:button id="logout" value="Logout" outcome="login" /> 
+           
+            <!-- Other content -->
+                <h:commandButton id="logoutButton" value="Logout" action="#{facesContext.externalContext.redirect('logout.jsp')}" />
+            
             <!-- TODO FIX ACTIONS -->
-            <h:commandButton id="changepassword" value="Change Password" action ="Edit"/>
+            <h:button outcome="Edit.xhtml" value="Change Password"/>
         </h:form>
     </h:body>
 </html>

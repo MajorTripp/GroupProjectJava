@@ -5,11 +5,12 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Login</title>
+        <h:outputScript library="js" name="pass.js" />
         <h:outputStylesheet library="css" name="jsfcrud.css"/>
     </h:head>
     <h:body>
         <h2>Hello, please log in:</h2>
-        <form method="post" action="j_security_check">
+        <form method="post" action="j_security_check" >
             <table role="presentation">
                 <tr>
                     <td>Please type your user name: </td>
