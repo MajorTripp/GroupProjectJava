@@ -6,9 +6,10 @@
     <h:head>
         <title>Login</title>
         <h:outputScript library="js" name="pass.js" />
+        <h:outputScript library="js" name="logoutScript.js" />
         <h:outputStylesheet library="css" name="jsfcrud.css"/>
     </h:head>
-    <h:body>
+    <h:body>  
         <h2>Hello, please log in:</h2>
         <form method="post" action="j_security_check" >
             <table role="presentation">
@@ -22,7 +23,7 @@
                 </tr>
             </table>
             <p></p>
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="Submit" onclick="storeUsername()"/>
             <input type="reset" value="Reset"/>
         </form>
         <br/>

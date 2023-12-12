@@ -8,13 +8,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <link href="css/jsfcrud.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <h1>You have been logged out!</h1>
         <% session.invalidate(); 
         request.logout();
-        %>
+         %>
         <a href="response.xhtml">Return to login page</a>
     </body>
 </html>
